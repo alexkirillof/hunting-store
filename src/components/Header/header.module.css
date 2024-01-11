@@ -1,0 +1,72 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 12px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--white);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.logo h2 {
+  color: var(--logo);
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.favourites {
+  cursor: pointer;
+}
+
+.account svg {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-fav {
+  stroke: var(--text-primary-default);
+  fill: var(--white);
+}
+
+.icon-cart {
+  fill: var(--text-primary-default);
+}
+
+.icon-fav:hover {
+  stroke: var(--hover);
+}
+
+.icon-cart:hover {
+  fill: var(--hover);
+}
+
+.cart {
+  position: relative;
+}
+.favourites {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--buttonColor);
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--white);
+  text-align: center;
+  line-height: 16px;
+}

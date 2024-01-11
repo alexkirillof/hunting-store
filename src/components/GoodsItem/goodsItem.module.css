@@ -1,0 +1,44 @@
+.imgWrap {
+  display: flex;
+  height: 50%;
+}
+.image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  min-height: 50px;
+}
+
+.price {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-primary-default);
+  width: 100%;
+}
+
+.btnWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

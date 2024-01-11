@@ -1,0 +1,17 @@
+.listWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 82%;
+}
+
+.card {
+  border-radius: 8px;
+  background: var(--itemBg);
+  width: 240px;
+  padding: 12px;
+  align-items: center;
+  height: 280px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

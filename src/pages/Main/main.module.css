@@ -1,0 +1,71 @@
+.title {
+  margin-bottom: 8px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 640px;
+}
+
+.card {
+  border-radius: 8px;
+  background: var(--itemBg);
+  width: 240px;
+  padding: 12px;
+  align-items: center;
+  height: 310px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.imgWrap {
+  display: flex;
+  height: 55%;
+}
+.image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  min-height: 50px;
+}
+
+.price {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-primary-default);
+  width: 100%;
+}
+
+.btnWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addBtn {
+  padding: 6px;
+  background: var(--btnBg);
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--itemBg);
+}

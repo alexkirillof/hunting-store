@@ -1,0 +1,13 @@
+:root {
+  --white: #ffffff;
+  --text-primary-default: #2d2d2d;
+  --bg-icon: #818181ff;
+
+  --hover: #df4c25;
+  --buttonColor: #ec7243;
+  --button-disable: #e8c0ab;
+  --logo: #666b66ff;
+  --itemBg: #f6f6f6ff;
+  --btnBg: #adb0a7ff;
+  --btnText: #fcfcfc;
+}
