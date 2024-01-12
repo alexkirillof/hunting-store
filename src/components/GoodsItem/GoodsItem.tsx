@@ -6,16 +6,16 @@ import {
   removeItemFromCart,
   removeItemFromFav
 } from 'src/store/slices/goodsSlice.ts'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from 'src/store'
+import { useDispatch } from 'react-redux'
 import Button from 'src/components/UI/Button/Button.tsx'
+import { useAppSelector } from 'src/hooks'
 
 export const GoodsItem = ({ product, appurtenance }: GoodsItemProps) => {
   const dispatch = useDispatch()
-  const inCart = useSelector<RootState, boolean>(
+  const inCart = useAppSelector(
     (state) => !!state.goods.cart.find((x) => x.name === product.name)
   )
-  const inFav = useSelector<RootState, boolean>(
+  const inFav = useAppSelector(
     (state) => !!state.goods.favorites.find((x) => x.name === product.name)
   )
   return (

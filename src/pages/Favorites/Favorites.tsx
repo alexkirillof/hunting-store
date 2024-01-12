@@ -1,12 +1,10 @@
 import { Layout } from '../../components/Layout/Layout.tsx'
-import { useSelector } from 'react-redux'
 import styles from './favorites.module.css'
-import { IProduct } from 'src/store/slices/goodsSlice.ts'
 import { GoodsList } from 'src/components/GoodsList/GoodsList.tsx'
-import {RootState} from "src/store";
+import { useAppSelector } from 'src/hooks'
 
 export const Favorites = () => {
-  const  favorites  =  useSelector<RootState,IProduct[]>((state) => state.goods.favorites)
+  const favorites = useAppSelector((state) => state.goods.favorites)
   return (
     <Layout>
       <h2 className={styles.title}>Избранное</h2>

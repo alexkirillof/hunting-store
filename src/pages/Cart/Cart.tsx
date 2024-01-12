@@ -1,12 +1,10 @@
 import { Layout } from '../../components/Layout/Layout.tsx'
-import { useSelector } from 'react-redux'
 import styles from './cart.module.css'
-import { IProduct } from 'src/store/slices/goodsSlice.ts'
 import { GoodsList } from 'src/components/GoodsList/GoodsList.tsx'
-import {RootState} from "src/store";
+import { useAppSelector } from 'src/hooks'
 
 export const Cart = () => {
-  const  cart  = useSelector<RootState,IProduct[]>((state) => state.goods.cart)
+  const cart = useAppSelector((state) => state.goods.cart)
   return (
     <Layout>
       <h2 className={styles.title}>Корзина</h2>
